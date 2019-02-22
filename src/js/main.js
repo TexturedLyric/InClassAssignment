@@ -1,6 +1,17 @@
+class MainComponent extends React.Component {
 
+    //constructor
+    constructor(props){
+        super(props);
+    } 
+
+    render() {
+        return (
+            <div className="container">
+                <Input />
+            </div>
+        );
+    };
+}
 var root = document.getElementById('root');
-
-var content = ();
-
-ReactDOM.render(content, root);
+ReactDOM.render(<MainComponent/>, root);
